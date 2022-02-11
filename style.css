@@ -1,5 +1,5 @@
 body {
-  font-family: poppins, sans-serif;
+  font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
   background-color: #e5e5e5;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   width: 375px;
   position: absolute;
   padding-left: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 1px 1px 1px 50px;
 }
 
