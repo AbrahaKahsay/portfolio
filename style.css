@@ -1,0 +1,116 @@
+body {
+  font-family: poppins, sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  height: 718px;
+  width: 375px;
+  position: absolute;
+  padding-left: 0;
+  background-color: #ffffff;
+  border-radius: 1px 1px 1px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+
+.logo {
+  height: 20px;
+  width: 76px;
+  margin-left: 24px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #6070ff;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.humberger-menu {
+  height: 12px;
+  width: 18px;
+  margin-left: 3px;
+  margin-top: 6px;
+  padding-right: 36px;
+  color: #6070ff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-image {
+  background-image: url("images/header-shapes.svg");
+  background-size: cover;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.name {
+  height: 150px;
+  width: 327px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+  color: #172b4d;
+  margin-top: 114px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.description {
+  height: 146px;
+  width: 327px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #344563;
+}
+
+.contact-message a {
+  height: 24px;
+  width: 117px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #7f8cff;
+  text-decoration: none;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 170px;
+  margin-left: 24px;
+  padding-left: 0;
+}
+
+.social-media ul li {
+  list-style: none;
+}
