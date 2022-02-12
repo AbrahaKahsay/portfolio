@@ -109,10 +109,17 @@ body {
   width: 170px;
   margin-left: 24px;
   padding-left: 0;
+  color: #505f79;
 }
 
 .social-media ul li {
   list-style: none;
+  color: #505f79;
+}
+
+.social-media ul li a {
+  /* list-style: none; */
+  color: #505f79;
 }
 
 /* works */
