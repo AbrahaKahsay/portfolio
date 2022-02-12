@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   height: 718px;
   width: 375px;
-  /* position: absolute; */
   padding-left: 0;
   background-color: #fff;
   border-radius: 1px 1px 1px 50px;
@@ -127,7 +126,6 @@ body {
 .card {
   width: 295px;
   flex-direction: column;
-  /* position: static; */
   border-radius: 16px;
   margin-top: 44px;
   padding: 16px;
@@ -257,7 +255,6 @@ button {
   width: 349px;
   margin-left: 0;
   margin-right: 0;
-  /* background-color: #fff; */
   border-radius: 40px 40px 30px 10px;
 }
 
@@ -271,7 +268,6 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: #fff;
-  /* border: 2px solid #e5e5e5; */
   border-radius: 0 3px;
 }
 
