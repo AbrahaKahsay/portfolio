@@ -117,8 +117,7 @@ body {
 
 /* works */
 .works-section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin-top: 100px;
   background-color: #e5e5e5;
 }
@@ -316,7 +315,7 @@ button {
 
 .social-media1 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 20px;
   width: 170px;
   margin-left: 0;
