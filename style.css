@@ -255,6 +255,19 @@ button {
   background-color: #fff;
 }
 
+button:hover {
+  color: #fff;
+  background-color: #6070ff;
+  transition-property: all;
+  transition: 0.2s ease-in-out;
+}
+
+button:active {
+  color: #fff;
+  background-color: #2230d2;
+  border: 1px solid #2230d2;
+}
+
 .personal-info {
   display: grid;
   margin-top: 54px;
@@ -471,13 +484,7 @@ button {
 }
 
 #touch {
-  padding: 12px 16px;
-  font-size: 17px;
-  font-weight: 500;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
   margin: 0 211px 0px 24px;
-  text-align: center;
   width: 140px;
 }
 
