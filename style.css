@@ -449,22 +449,7 @@ button {
   color: #ebebff;
 }
 
-#name {
-  height: 18px;
-  width: 273px;
-  margin: 0 24px 0 24px;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  color: #172b4d;
-  padding: 15px 38px 15px 16px;
-  border-radius: 8px;
-  border: 1px solid #cfd8dc;
-}
-
-#email {
+.form-input {
   height: 18px;
   width: 273px;
   font-size: 17px;
@@ -482,16 +467,6 @@ button {
 #message {
   height: 140px;
   width: 273px;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #b3bac5;
-  margin: 18px 24px 0 24px;
-  padding: 15px 38px 15px 16px;
-  border-radius: 8px;
-  border: 1px solid #cfd8dc;
 }
 
 #touch {
