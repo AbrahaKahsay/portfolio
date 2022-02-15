@@ -506,3 +506,7 @@ button {
   margin: 22px 211px 45px 24px;
   text-align: center;
 }
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
