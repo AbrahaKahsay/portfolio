@@ -404,3 +404,105 @@ button {
   margin-left: 10px;
   height: 12px;
 }
+/* contact-form */
+.contact-form-container {
+  background-color: #6070ff;
+  width: 375px;
+  border-radius: 100px 0 0 0;
+  /* position: absolute; */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 779px;
+  width: 375px;
+  justify-content: center;
+  background-image: url("images/contact-form-shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: 153px;
+  background-position-y: 21px;
+}
+
+.contact-form h1 {
+  height: 56px;
+  width: 375px;
+  margin: 103px 0 0 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  position: static;
+}
+
+.contact-form p {
+  height: 102px;
+  width: 327px;
+  margin: 12px 24px 87px 24px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+#name {
+  height: 18px;
+  width: 273px;
+  margin: 0 24px 0 24px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #172b4d;
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+#email {
+  height: 18px;
+  width: 273px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #172b4d;
+  margin: 20px 24px 0 24px;
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+#message {
+  height: 140px;
+  width: 273px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #b3bac5;
+  margin: 18px 24px 0 24px;
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+#touch {
+  width: 108px;
+  height: 48px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 12px 0 12px 0;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  margin: 22px 211px 45px 24px;
+  text-align: center;
+}
