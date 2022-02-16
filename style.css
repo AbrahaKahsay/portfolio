@@ -16,7 +16,9 @@ body {
   background-color: #fff;
   border-radius: 1px 1px 1px 50px;
 }
-
+.nav-bar-links {
+  display: none;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -495,4 +497,146 @@ button:active {
 
 .font-poppins {
   font-family: Poppins, sans-serif;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+  body {
+    font-family: poppins, sans-serif, Arial, Helvetica;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 916px;
+    width: 100%;
+    padding-left: 0;
+    background-color: #fff;
+    border-radius: 1px 1px 1px 50px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 0;
+    height: 72px;
+    width: auto;
+    align-items: center;
+  }
+  .nav-bar-links {
+    display: flex;
+    box-sizing: border-box;
+    /* justify-content: space-between; */
+    gap: 32px;
+    height: 40px;
+    width: 259px;
+    margin-right: 142px;
+    padding: 10px;
+  }
+
+  .nav-bar-links li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .nav-bar-links li a {
+    text-decoration: none;
+  }
+
+  .humberger-menu {
+    display: none;
+  }
+
+  .logo {
+    height: 20px;
+    width: 76px;
+    margin-left: 155px;
+    top: 10px;
+    color: #6070ff;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .logo a {
+    text-decoration: none;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bg-image {
+    background-image: url("images/Header\ bg-desktop@2x.png");
+    background-size: cover;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .name {
+    height: 122px;
+    width: auto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    color: #172b4d;
+    margin-left: 260px;
+    margin-right: 260px;
+    flex-grow: 0;
+    word-wrap: wrap;
+  }
+
+  .description {
+    height: 98px;
+    width: auto;
+    margin-left: 260px;
+    margin-right: 260px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #344563;
+  }
+
+  .contact-message a {
+    height: 24px;
+    width: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #7f8cff;
+    text-decoration: none;
+    margin-left: 260px;
+    margin-top: 12px;
+    /* margin-right: 24px; */
+  }
+
+  .social-media ul {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    width: 170px;
+    margin-left: 260px;
+    padding-left: 0;
+    color: #505f79;
+  }
+
+  .social-media ul li {
+    list-style: none;
+    color: #505f79;
+  }
+
+  .social-media a {
+    /* list-style: none; */
+    color: #505f79;
+  }
 }
