@@ -255,6 +255,20 @@ button {
   background-color: #fff;
 }
 
+button:hover {
+  color: #fff;
+  background-color: #6070ff;
+
+  /* transition-property: all;
+    transition: 0.2s ease-in-out; */
+}
+
+button:active {
+  color: #fff;
+  background-color: #2230d2;
+  border: 1px solid #2230d2;
+}
+
 .personal-info {
   display: grid;
   margin-top: 54px;
@@ -403,4 +417,82 @@ button {
   align-items: center;
   margin-left: 10px;
   height: 12px;
+}
+
+/* contact-form */
+
+.contact-form-container {
+  background-color: #6070ff;
+  width: 375px;
+  border-radius: 100px 0 0 0;
+  padding-bottom: 8px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 779px;
+  width: 375px;
+  justify-content: center;
+  background-image: url("images/contact-form-shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: 153px;
+  background-position-y: 21px;
+}
+
+.contact-form h1 {
+  height: 56px;
+  width: 375px;
+  margin: 103px 0 0 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-form p {
+  height: 102px;
+  width: 327px;
+  margin: 12px 24px 69px 24px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.form-input {
+  height: 18px;
+  width: 273px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #172b4d;
+  margin: 0 24px 24px 24px;
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+#message {
+  height: 140px;
+  width: 273px;
+}
+
+#touch {
+  margin: 0 211px 0 24px;
+  width: 140px;
+}
+
+.form-bottom-line-shape {
+  text-align: center;
+}
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
 }
