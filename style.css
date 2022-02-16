@@ -258,8 +258,8 @@ button {
 button:hover {
   color: #fff;
   background-color: #6070ff;
-  transition-property: all;
-  transition: 0.2s ease-in-out;
+   /* transition-property: all;
+   transition: 0.2s ease-in-out; */
 }
 
 button:active {
@@ -423,7 +423,6 @@ button:active {
   width: 375px;
   border-radius: 100px 0 0 0;
   padding-bottom: 8px;
-  /* position: absolute; */
 }
 
 .contact-form {
@@ -448,7 +447,6 @@ button:active {
   line-height: 52px;
   text-align: center;
   color: #fff;
-  /* position: static; */
 }
 
 .contact-form p {
@@ -484,13 +482,11 @@ button:active {
 }
 
 #touch {
-  margin: 0 211px 0px 24px;
+  margin: 0 211px 0 24px;
   width: 140px;
 }
 
 .form-bottom-line-shape {
-  /* margin-left: auto;
-  margin-right: auto; */
   text-align: center;
 }
 
