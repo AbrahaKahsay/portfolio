@@ -499,13 +499,25 @@ button:active {
   font-family: Poppins, sans-serif;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1100px) {
+.desktop-card-image {
+  display: none;
+}
+
+.desktop-card-content {
+  display: none;
+}
+.image1-dt {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
   body {
     font-family: poppins, sans-serif, Arial, Helvetica;
     background-color: #e5e5e5;
     margin: 0;
     padding: 0;
     display: grid;
+    width: 100%;
   }
 
   .cover {
@@ -515,6 +527,7 @@ button:active {
     height: 916px;
     width: 100%;
     padding-left: 0;
+    margin-right: 0;
     background-color: #fff;
     border-radius: 1px 1px 1px 50px;
   }
@@ -525,18 +538,20 @@ button:active {
     margin-top: 0;
     margin-left: 0;
     height: 72px;
-    width: auto;
+    width: 100%;
+    gap: 32px;
     align-items: center;
   }
   .nav-bar-links {
     display: flex;
     box-sizing: border-box;
-    /* justify-content: space-between; */
-    gap: 32px;
+    justify-content: space-evenly;
     height: 40px;
-    width: 259px;
+    width: 100%;
     margin-right: 142px;
     padding: 10px;
+    align-items: center;
+    justify-items: end;
   }
 
   .nav-bar-links li {
@@ -554,12 +569,13 @@ button:active {
 
   .logo {
     height: 20px;
-    width: 76px;
+    width: 100%;
     margin-left: 155px;
     top: 10px;
     color: #6070ff;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+    align-items: center;
   }
 
   .logo a {
@@ -568,18 +584,25 @@ button:active {
   .main-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .intro {
+    width: 100%;
+    margin-top: 288px;
   }
 
   .bg-image {
     background-image: url("images/Header\ bg-desktop@2x.png");
     background-size: cover;
     height: auto;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .name {
     height: 122px;
-    width: auto;
+    width: 920px;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -588,13 +611,12 @@ button:active {
     color: #172b4d;
     margin-left: 260px;
     margin-right: 260px;
-    flex-grow: 0;
-    word-wrap: wrap;
+    margin-bottom: 0;
   }
 
   .description {
     height: 98px;
-    width: auto;
+    width: 920px;
     margin-left: 260px;
     margin-right: 260px;
     font-size: 20px;
@@ -607,7 +629,7 @@ button:active {
 
   .contact-message a {
     height: 24px;
-    width: auto;
+    width: 100%;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -638,5 +660,172 @@ button:active {
   .social-media a {
     /* list-style: none; */
     color: #505f79;
+  }
+  /* works */
+  .container-works-section {
+    display: grid;
+    box-sizing: border-box;
+    margin-top: 100px;
+    width: 100%;
+    background-color: #e5e5e5;
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+
+  .card {
+    width: 100%;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-radius: 16px;
+    margin-top: 44px;
+    padding: 16px;
+    margin-bottom: 24px;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+  }
+
+  .desktop-card-image {
+    display: flex;
+    width: 544px;
+    height: 448px;
+  }
+
+  .desktop-card-content {
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    height: 448px;
+  }
+
+  .image1-dt {
+    /* height: 220px; */
+    border-radius: 8px;
+    display: block;
+  }
+  .image1 {
+    display: none;
+  }
+
+  .card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 32px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    color: #172b4d;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .tonic {
+    padding-left: 0;
+    margin-top: 12px;
+    list-style: none;
+  }
+
+  .headline1 {
+    height: 80px;
+    width: 100%;
+  }
+
+  .headline2 {
+    height: 124px;
+    width: auto;
+  }
+
+  .canopy1 {
+    list-style: none;
+    height: 16px;
+    width: auto;
+    left: 0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    color: #344563;
+  }
+
+  .canopy {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .cardsub {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    justify-self: left;
+    height: 24px;
+    width: auto;
+  }
+
+  .list {
+    box-sizing: border-box;
+    /* padding: 4px 12px; */
+    background-color: #ebebff;
+    color: #6070ff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+
+  p {
+    height: 76px;
+    width: auto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #344563;
+  }
+
+  button {
+    height: 48px;
+    width: 124px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #396df2;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    margin-top: 12px;
+    background-color: #fff;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #6070ff;
+
+    /* transition-property: all;
+    transition: 0.2s ease-in-out; */
+  }
+
+  button:active {
+    color: #fff;
+    background-color: #2230d2;
+    border: 1px solid #2230d2;
   }
 }
