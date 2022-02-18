@@ -147,7 +147,7 @@ body {
 
 .image1 {
   /* height: 220px; */
-  width: 295px;
+  /* width: 295px; */
   border-radius: 8px;
 }
 
@@ -510,6 +510,10 @@ button:active {
   display: none;
 }
 
+/*
+/////   DESKTOP VERSION   /////
+*/
+
 @media only screen and (min-width: 992px) {
   body {
     font-family: poppins, sans-serif, Arial, Helvetica;
@@ -687,6 +691,17 @@ button:active {
     background-color: #fff;
   }
 
+  #card1, #card3 {
+    /* GIVE THE ELEMENTS IT'S RIGHT POSITION */
+    /* flex-direction: row-reverse; */
+  }
+
+  #card2, #card4 {
+    /* GIVE THE ELEMENTS IT'S RIGHT POSITION */
+    flex-direction: row-reverse;
+    /* align-self: flex-end; */
+  }
+
   .desktop-card-image {
     display: flex;
     width: 544px;
@@ -705,8 +720,9 @@ button:active {
     border-radius: 8px;
     display: block;
   }
+
   .image1 {
-    display: none;
+    /* display: none; */
   }
 
   .card-head {
