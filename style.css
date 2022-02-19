@@ -61,8 +61,7 @@ body {
 .bg-image {
   background-image: url("images/header-shapes.svg");
   background-size: cover;
-  height: auto;
-  padding-bottom: 40px;
+  padding-bottom: 216px;
 }
 
 .name {
@@ -77,6 +76,10 @@ body {
   margin-top: 114px;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+#break {
+  display: none;
 }
 
 .description {
@@ -122,7 +125,6 @@ body {
 }
 
 .social-media a {
-  /* list-style: none; */
   color: #505f79;
 }
 
@@ -148,7 +150,6 @@ body {
 }
 
 .image1 {
-  /* height: 220px; */
   width: 100%;
   border-radius: 8px;
 }
@@ -262,9 +263,6 @@ button {
 button:hover {
   color: #fff;
   background-color: #6070ff;
-
-  /* transition-property: all;
-    transition: 0.2s ease-in-out; */
 }
 
 button:active {
@@ -354,7 +352,6 @@ button:active {
 }
 
 .social-media1 ul li a {
-  /* list-style: none; */
   color: #505f79;
 }
 
@@ -369,7 +366,12 @@ button:active {
   grid-column: auto;
   padding-top: 24px;
   padding-left: 0;
+  margin-left: 0;
   margin-top: 32px;
+}
+
+.languages li {
+  list-style: none;
 }
 
 .lang {
@@ -377,6 +379,10 @@ button:active {
   height: 72px;
   width: 327px;
   justify-content: space-between;
+}
+
+.dt-language-types {
+  padding-left: 0;
 }
 
 .frame {
@@ -416,6 +422,7 @@ button:active {
   line-height: 20px;
   padding: 0;
   margin-bottom: 5px;
+  list-style: none;
 }
 
 .language-type p {
@@ -523,7 +530,7 @@ button:active {
     padding-left: 0;
     margin-right: 0;
     background-color: #fff;
-    border-radius: 1px 1px 1px 50px;
+    border-radius: 1px 1px 1px 100px;
   }
 
   .header {
@@ -554,13 +561,12 @@ button:active {
   .nav-bar-links {
     display: flex;
     box-sizing: border-box;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 40px;
-    width: 100%;
+    width: 259px;
     margin-right: 142px;
-    padding: 10px;
     align-items: center;
-    justify-items: end;
+    gap: 32px;
   }
 
   .nav-bar-links li {
@@ -573,7 +579,6 @@ button:active {
   }
 
   .social-media a {
-    /* list-style: none; */
     color: #505f79;
   }
 
@@ -626,7 +631,7 @@ button:active {
     background-image: url("images/Header\ bg-desktop@2x.png");
     background-size: cover;
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 216px;
   }
 
   .name {
@@ -845,9 +850,6 @@ button:active {
   button:hover {
     color: #fff;
     background-color: #6070ff;
-
-    /* transition-property: all;
-    transition: 0.2s ease-in-out; */
   }
 
   button:active {
@@ -857,12 +859,10 @@ button:active {
   }
 
   .personal-info {
-    /* display: grid; */
     margin-top: 54px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    border-radius: 40px 40px 30px 10px;
   }
 
   .about-me {
@@ -886,6 +886,7 @@ button:active {
     width: 447px;
     padding: 24px;
     height: 392px;
+    margin-left: 142px;
   }
 
   .dt-about-me-languages {
@@ -893,12 +894,20 @@ button:active {
     padding: 24px;
     width: 684px;
     height: 380px;
+    margin-right: 142px;
+    list-style-type: none;
   }
 
   .dt-language-types {
     display: flex;
     flex-direction: row;
     width: 414px;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .languages li {
+    list-style: none;
   }
 
   .about-me h2 {
@@ -946,7 +955,6 @@ button:active {
   }
 
   .social-media1 ul li a {
-    /* list-style: none; */
     color: #505f79;
   }
 
@@ -1035,9 +1043,6 @@ button:active {
     background-image: url("images/contact-form-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
-
-    /* background-position-x: 153px;
-    background-position-y: 21px; */
   }
 
   .contact-form h4 {
@@ -1096,7 +1101,7 @@ button:active {
   }
 
   .form-bottom-line-shape {
-    text-align: center;
+    display: none;
   }
 
   .font-poppins {
