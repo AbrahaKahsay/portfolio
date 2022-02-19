@@ -901,6 +901,10 @@ button:active {
     width: 414px;
   }
 
+  .dt-language-types li ul {
+    list-style: none;
+  }
+
   .about-me h2 {
     height: 101px;
     width: auto;
