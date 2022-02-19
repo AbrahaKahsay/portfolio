@@ -119,6 +119,10 @@ body {
   color: #505f79;
 }
 
+.languages li {
+  list-style: none;
+}
+
 .social-media ul li {
   list-style: none;
   color: #505f79;
@@ -343,10 +347,6 @@ button:active {
   width: 170px;
   margin-left: 0;
   padding-left: 0;
-}
-
-.languages li {
-  list-style: none;
 }
 
 .social-media1 ul li {
