@@ -5,6 +5,9 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .cover {
@@ -19,6 +22,10 @@ body {
 
 .nav-bar-links {
   display: none;
+}
+
+.nav-bar-links li a {
+  color: #344563;
 }
 
 .header {
@@ -42,6 +49,7 @@ body {
 
 .logo a {
   text-decoration: none;
+  color: #344563;
 }
 
 .humberger-menu {
@@ -519,6 +527,8 @@ button:active {
     padding: 0;
     display: grid;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .cover {
