@@ -345,6 +345,10 @@ button:active {
   padding-left: 0;
 }
 
+.languages li {
+  list-style: none;
+}
+
 .social-media1 ul li {
   list-style: none;
   color: #505f79;
@@ -368,10 +372,6 @@ button:active {
   padding-left: 0;
   margin-left: 0;
   margin-top: 32px;
-}
-
-.languages li {
-  list-style: none;
 }
 
 .lang {
@@ -671,6 +671,10 @@ button:active {
     color: #505f79;
   }
 
+  .languages li {
+    list-style: none;
+  }
+
   .social-media ul li {
     list-style: none;
     color: #505f79;
@@ -904,10 +908,6 @@ button:active {
     width: 414px;
     list-style-type: none;
     padding-left: 0;
-  }
-
-  .languages li {
-    list-style: none;
   }
 
   .about-me h2 {
