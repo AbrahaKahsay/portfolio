@@ -6,8 +6,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+  /* max-width: 100%;
+  overflow-x: hidden; */
 }
 
 .cover {
@@ -536,8 +536,8 @@ button:active {
     padding: 0;
     display: grid;
     width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    /* max-width: 100%;
+    overflow-x: hidden; */
   }
 
   .cover {
