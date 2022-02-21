@@ -116,6 +116,15 @@ body {
   margin-top: 114px;
   margin-left: 24px;
   margin-right: 24px;
+  animation-name: name-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes name-animation {
+  100% {
+    margin-left: 24px;
+  }
 }
 
 #break {
