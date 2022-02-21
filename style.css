@@ -663,9 +663,18 @@ button:active {
     line-height: 60px;
     text-align: left;
     color: #172b4d;
-    margin-left: 260px;
+    margin-left: -260px;
     margin-right: 260px;
     margin-bottom: 0;
+    animation-name: name-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes name-animation {
+    100% {
+      margin-left: 260px;
+    }
   }
 
   .description {
