@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 .cover {
@@ -309,7 +310,7 @@ button:active {
   margin-top: 54px;
   width: 349px;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 25px;
   border-radius: 40px 40px 30px 10px;
 }
 
@@ -534,6 +535,7 @@ button:active {
     padding: 0;
     display: grid;
     width: 100%;
+    align-items: center;
   }
 
   .cover {
