@@ -1134,3 +1134,18 @@ button:active {
     font-family: Poppins, sans-serif;
   }
 }
+
+
+  /* ↓ACCESSIBILITY↓ */
+
+.accessibility,
+.canopy {
+  filter: invert(1);
+}
+.list {
+  color: #0018F5;
+}
+.contact-message a,
+.contact-message1 a {
+  color: #051EFF;
+}
