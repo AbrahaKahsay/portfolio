@@ -529,6 +529,30 @@ button:active {
 /* DESKTOP-VERSION */
 
 @media only screen and (min-width: 992px) {
+
+  /* ↓ACCESSIBILITY↓ */
+
+  .accessibility,
+  .canopy {
+    filter: invert(1);
+  }
+  .list {
+    color: #0018f5;
+  }
+  .contact-message a,
+  .contact-message1 a {
+    color: #051eff;
+  }
+
+  .form-accessiblity {
+    margin-left: 300px;
+  }
+  .form-accessiblity {
+    display: flex;
+    justify-content: right;
+    margin-right: 497px;
+  }
+
   body {
     font-family: poppins, sans-serif, Arial, Helvetica;
     background-color: #e5e5e5;
@@ -1130,28 +1154,5 @@ button:active {
 
   .font-poppins {
     font-family: Poppins, sans-serif;
-  }
-
-  /* ↓ACCESSIBILITY↓ */
-
-  .accessibility,
-  .canopy {
-    filter: invert(1);
-  }
-  .list {
-    color: #0018f5;
-  }
-  .contact-message a,
-  .contact-message1 a {
-    color: #051eff;
-  }
-
-  .form-accessiblity {
-    margin-left: 300px;
-  }
-  .form-accessiblity {
-    display: flex;
-    justify-content: right;
-    margin-right: 497px;
   }
 }
