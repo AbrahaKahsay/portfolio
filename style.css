@@ -578,6 +578,7 @@ button:active {
 
   .nav-bar-links {
     display: flex;
+    flex-direction: row;
     box-sizing: border-box;
     justify-content: space-between;
     height: 40px;
