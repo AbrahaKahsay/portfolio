@@ -1,9 +1,19 @@
-function mobilemenu() {
-    if (document.getElementById("navbtn").style.display=="block"){
-        document.getElementById("navbtn").style.display="none"  
-    }
-    else {
-        document.getElementById("navbtn").style.display="block"
-    }
+function openNav() {
+  document.getElementById('navBar').style.width = '100%';
 }
-document.getElementById("hum").addEventListener("click", mobilemenu)
+
+function closeNav() {
+  document.getElementById('navBar').style.width = '0%';
+}
+
+document.getElementById('hum').addEventListener('click', () => {
+  openNav();
+});
+
+document.getElementById('closebtn').addEventListener('click', () => {
+  closeNav();
+});
+
+document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', () => {
+  document.getElementById('navBar').style.width = '0%';
+}));
