@@ -110,7 +110,7 @@
           <img
             class="image1"
             src="images/Snapshoot-Portfolio(1).svg"
-            alt="Porfolio-image1"
+            alt="Preview of first work"
           />
         </div>
         <div class="desktop-card-content">
@@ -142,7 +142,7 @@
           <img
             class="image1"
             src="images/Snapshoot-Portfolio(2).svg"
-            alt="Porfolio-image2"
+            alt="Preview of second work"
           />
         </div>
         <div class="desktop-card-content">
@@ -180,7 +180,7 @@
           <img
             class="image1"
             src="images/Snapshoot-Portfolio(3).svg"
-            alt="Porfolio-image1"
+            alt="Preview of third work"
           />
         </div>
         <div class="desktop-card-content">
@@ -213,7 +213,7 @@
           <img
             class="image1"
             src="images/Snapshoot-Portfolio(4).svg"
-            alt="Porfolio-image1"
+            alt="Preview of four work"
           />
         </div>
         <div class="desktop-card-content">
@@ -328,17 +328,17 @@
     <!-- contact form -->
     <section class="contact-form-container" id="contact">
       <div class="contact-form">
-        <h4>Contact me</h4>
+        <h3 class="h3-contact" >Contact me</h3>
         <br />
-        <p>
+        <p class="accessibility">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
         <div>
           <form action="https://formspree.io/f/mqknelyk" method="POST">
-            <div>
-              <label for="name"></label>
+            <div class="form-accessiblity">
+              <label for="name"> Name </label>
               <input
                 id="name"
                 type="text"
@@ -350,28 +350,32 @@
                 required
               />
             </div>
-            <div>
-              <label for="email"></label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="abrahak81@gmail.com"
-                class="form-input font-poppins"
-                value=""
-                required
-              />
+            <div class="form-accessiblity">
+              <label for="email">
+                Email
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="abrahak81@gmail.com"
+                  class="form-input font-poppins"
+                  value=""
+                  required
+                />
+              </label>
             </div>
-            <div>
-              <label for="message"></label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write your message here"
-                class="form-input form-button font-poppins"
-                maxlength="500"
-                required
-              ></textarea>
+            <div class="form-accessiblity">
+              <label for="message"
+                >Message
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here"
+                  class="form-input form-button font-poppins"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </label>
             </div>
             <!-- your other form fields go here -->
             <button id="touch" type="submit">Get In Touch</button>

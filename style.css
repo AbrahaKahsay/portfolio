@@ -447,6 +447,7 @@ button:active {
 .contact-form {
   display: flex;
   flex-direction: column;
+  flex-grow: 0;
   height: 779px;
   width: 375px;
   justify-content: center;
@@ -573,6 +574,30 @@ button:active {
 /* DESKTOP-VERSION */
 
 @media only screen and (min-width: 992px) {
+
+  /* ↓ACCESSIBILITY↓ */
+
+  .accessibility,
+  .canopy {
+    filter: invert(1);
+  }
+  .list {
+    color: #0018f5;
+  }
+  .contact-message a,
+  .contact-message1 a {
+    color: #051eff;
+  }
+
+  .form-accessiblity {
+    margin-left: 300px;
+  }
+  .form-accessiblity {
+    display: flex;
+    justify-content: right;
+    margin-right: 497px;
+  }
+
   body {
     font-family: poppins, sans-serif, Arial, Helvetica;
     background-color: #e5e5e5;
@@ -1130,7 +1155,7 @@ button:active {
     background-size: cover;
   }
 
-  .contact-form h4 {
+  .h3-contact {
     height: 56px;
     width: 801px;
     margin: 103px 0 0 0;
@@ -1169,14 +1194,11 @@ button:active {
     padding: 15px 38px 15px 16px;
     border-radius: 8px;
     border: 1px solid #cfd8dc;
-    margin-left: 497px;
   }
 
   #message {
     height: 170px;
     width: 447px;
-    margin-left: 497px;
-    margin-right: 496px;
   }
 
   #touch {
