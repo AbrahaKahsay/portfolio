@@ -79,8 +79,6 @@ body {
   color: #6070ff;
 }
 
-
-
 .main-content {
   display: flex;
   flex-direction: column;
@@ -529,7 +527,7 @@ button:active {
     overflow-x: hidden;
     transition: 0.5s;
   }
-  
+
   .nav-bar-links {
     position: relative;
     display: flex;
@@ -543,7 +541,7 @@ button:active {
     list-style-type: none;
     text-decoration: none;
   }
-  
+
   .navbar a {
     padding: 8px;
     text-decoration: none;
@@ -553,7 +551,7 @@ button:active {
     display: block;
     transition: 0.3s;
   }
-  
+
   .close-btn {
     position: absolute;
     top: 0;
@@ -561,7 +559,7 @@ button:active {
     font-size: 40px;
     color: white;
   }
-  
+
   .humberger-menu {
     height: 12px;
     width: 18px;
@@ -617,7 +615,7 @@ button:active {
     backdrop-filter: blur(3rem);
     opacity: 1;
   }
-  
+
   .nav-bar-links {
     gap: 25px;
     position: relative;
