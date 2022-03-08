@@ -14,8 +14,8 @@ function closeNav() {
  // add event listner to open and close buttons.
 
 document.getElementById('hum').addEventListener('click', () => {
-  openNav();
-});
+  openNav()
+})
 
 document.getElementById('closebtn').addEventListener('click', () => {
   closeNav();
