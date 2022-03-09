@@ -122,13 +122,13 @@ function showModal(){
           <div>
             <ul class="butto multi" id="technologies">
               <li>
-                <button type="button" class="ht">html</button>
+                <button type="button" class="html-p">html</button>
               </li>
               <li>
-                <button type="button" class="ssc">css</button>
+                <button type="button" class="css-p">css</button>
               </li>
               <li>
-                <button type="button" class="sj">javaScript</button>
+                <button type="button" class="js-p">javaScript</button>
               </li>
            </ul>
           </div>
