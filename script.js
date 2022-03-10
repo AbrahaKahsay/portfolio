@@ -90,10 +90,10 @@ const projects = [
 ]
 
 // put some query selectors and functions here to call the modal
-function showModal(){
+function modal(){
   const projectDetails = document.querySelector('.card');
   const seenProject = document.querySelectorAll('.proj');
-  const main = document.querySelector('.mainPop');
+  const main = document.querySelector('.modal-container');
 
   seenProject.forEach((button) => {
     button.addEventListener('click', () => {
@@ -107,47 +107,41 @@ function showModal(){
         </div>
         <div class="info-list">
           <ul class="list">
-            <li class="campany">CANOPY</li>
-            <li class="role">Back End Dev</li>
-            <li class="year">2015</li>
+            <li class="canopy1">CANOPY</li>
+            <li class="canopy">Back End Dev</li>
+            <li class="canopy">2015</li>
           </ul>
         </div>
         <img class="pop-image" src="${projects[btnId].image}" alt="Snapshoot" />
         <div class="description">
-          <div>
             <p class="detail">${projects[btnId].description}</p>
-          </div>
         </div>
-        <div id="buttons">
-          <div>
-            <ul class="butto multi" id="technologies">
-              <li>
-                <button type="button" class="html-p">html</button>
-              </li>
-              <li>
-                <button type="button" class="css-p">css</button>
-              </li>
-              <li>
-                <button type="button" class="js-p">javaScript</button>
-              </li>
-           </ul>
-          </div>
-          <button type="button" class="live">
-           See live
-           <img
+        <ul class="tech-button" id="technologies">
+         <li>
+          <button type="button" class="html-p">html</button>
+         </li>
+         <li>
+          <button type="button" class="css-p">css</button>
+         </li>
+         <li>
+          <button type="button" class="js-p">javaScript</button>
+         </li>
+        </ul>
+        <div class="live-btns">
+         <button type="button" class="live">See live
+            <img
             src="${projects[btnId].live}"
             class="liveimage"
             alt="live"
-           />
-          </button>
-          <button type="button" class="Source">
-            See Source
+            />
+           </button>
+           <button type="button" class="Source">See Source
             <img
             src="${projects[btnId].source}"
             class="sourceimage"
             alt="Source"
             />
-          </button>
+            </button>
           </div>
         </div>
         
@@ -163,6 +157,6 @@ function showModal(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  showModal();
+  modal();
 });
 
