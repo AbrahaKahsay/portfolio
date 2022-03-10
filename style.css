@@ -513,63 +513,6 @@ button:active {
   font-family: Poppins, sans-serif;
 }
 
-@media only screen and (max-width: 992px) {
-  .navbar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: #6070ff;
-    backdrop-filter: blur(3rem);
-    opacity: 0.9;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-
-  .nav-bar-links {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-items: left;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 18px;
-    width: 100%;
-    margin-top: 120px;
-    list-style-type: none;
-    text-decoration: none;
-  }
-
-  .navbar a {
-    padding: 8px;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 36px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    font-size: 40px;
-    color: white;
-  }
-
-  .humberger-menu {
-    height: 12px;
-    width: 18px;
-    margin-left: 3px;
-    margin-top: 6px;
-    padding-right: 36px;
-    color: #6070ff;
-  }
-}
-
 /* POPUP WINDOW */
 
 .main-pop {
@@ -689,6 +632,63 @@ button:active {
   color: #396df2;
   background-color: #fff;
   font-size: 80%;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #6070ff;
+    backdrop-filter: blur(3rem);
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .nav-bar-links {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 18px;
+    width: 100%;
+    margin-top: 120px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .navbar a {
+    padding: 8px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+    color: white;
+  }
+
+  .humberger-menu {
+    height: 12px;
+    width: 18px;
+    margin-left: 3px;
+    margin-top: 6px;
+    padding-right: 36px;
+    color: #6070ff;
+  }
 }
 
 /* DESKTOP-VERSION */
