@@ -24,3 +24,21 @@ document.getElementById('closebtn').addEventListener('click', () => {
 document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', () => {
   document.getElementById('navBar').style.width = '0%';
 }));
+
+// Form Validation
+
+const form = document.getElementById('form'); 
+const email = document.getElementById('email');
+const errorElement = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  let showMessage = [];
+  if(email.value.toLowerCase()!==email.value){
+  showMessage.push('email send error.email must be in lower case');
+  } else{
+  form.submit();
+  }
+  e.preventDefault();
+  errorElement.innerText = showMessage;
+  }); 
+
