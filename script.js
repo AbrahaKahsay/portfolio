@@ -24,3 +24,10 @@ document.getElementById('closebtn').addEventListener('click', () => {
 document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', () => {
   document.getElementById('navBar').style.width = '0%';
 }));
+
+// Form Validation
+
+const form = document.getElementById('form'); 
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+
