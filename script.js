@@ -29,6 +29,7 @@ document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', (
 
 const form = document.getElementById('form'); 
 const email = document.getElementById('email');
+const errorElement = document.getElementById('error');
 
 
 
