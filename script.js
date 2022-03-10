@@ -93,7 +93,7 @@ const projects = [
 function modal(){
   const projectDetails = document.querySelector('.card');
   const seenProject = document.querySelectorAll('.proj');
-  const main = document.querySelector('.modal-container');
+  const main = document.querySelector('.main-pop');
 
   seenProject.forEach((button) => {
     button.addEventListener('click', () => {
@@ -147,8 +147,8 @@ function modal(){
         
       `;
       projectDetails.innerHTML = content;
-      const closePopup = projectDetails.querySelector('[card-close-btn]');
-      closePopup.addEventListener('click', () => {
+      const closePopup = projectDetails.querySelectorAll('.card-close-btn');
+      closePopup[btnId].addEventListener('click', () => {
         projectDetails.classList.remove('showpopup');
         main.classList.remove('blur');
       });

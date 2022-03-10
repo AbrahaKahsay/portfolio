@@ -572,7 +572,7 @@ button:active {
 
 /* POPUP WINDOW */
 
-.modal-container {
+.main-pop {
   /* display: none; */
   box-sizing: border-box;
   position: relative; /* Stay in place */
@@ -598,7 +598,7 @@ button:active {
 }
 
 /* Modal Content */
-.card1 {
+.modal {
   background-color: #fefefe;
   margin: auto;
   /* border: 1px solid #888;
@@ -609,7 +609,7 @@ button:active {
 
 .proj {
   color: #aaaaaa;
-  float: right;
+  /* float: right; */
 }
 
 .proj:hover,
