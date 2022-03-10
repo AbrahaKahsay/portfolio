@@ -28,6 +28,7 @@ document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', (
 // Form Validation
 
 const form = document.getElementById('form'); 
+const email = document.getElementById('email');
 
 
 
