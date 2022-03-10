@@ -573,7 +573,7 @@ button:active {
 /* POPUP WINDOW */
 
 .modal-container {
-  /* display: none; Hidden by default */
+  /* display: none; */
   box-sizing: border-box;
   position: relative; /* Stay in place */
   z-index: 1; /* Sit on top */
