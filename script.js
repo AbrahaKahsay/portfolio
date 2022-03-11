@@ -42,3 +42,11 @@ localStorage.setItem('form', JSON.stringify(formObject));
 
 document.addEventListener('DOMContentLoaded', () => {
   const formVal = localStorage.getItem('form');
+  if (formVal) {
+    const formObjectPar = JSON.parse(formVal);
+    inpName.value = formObjectPar.name;
+    inpEmail.value = formObjectPar.email;
+    inpMessage.value = formObjectPar.message;
+  }
+});
+
