@@ -31,5 +31,8 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const errorElement = document.getElementById('error');
 
-
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  errorElement.innerText = showMessage;
+  }); 
 
