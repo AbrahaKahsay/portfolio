@@ -28,10 +28,6 @@ document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', (
 // Form Validation
 
 const form = document.getElementById('form'); 
-const email = document.getElementById('email');
-const error = document.getElementById('error');
 
-form.addEventListener('Get In Touch', (e) => {
-  e.preventDefault()
-})
+
 

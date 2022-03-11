@@ -505,6 +505,15 @@ button:active {
   width: 140px;
 }
 
+#error {
+  width: 273px;
+  height: 18px;
+  margin-top: -24px;
+  margin-bottom: 24px;
+  margin-left: 44px;
+  color: rgb(233, 21, 56);
+}
+
 .form-bottom-line-shape {
   text-align: center;
 }
@@ -1177,6 +1186,10 @@ button:active {
     width: 447px;
     margin-left: 497px;
     margin-right: 496px;
+  }
+
+  #error {
+    margin-left: 497px;
   }
 
   #touch {
