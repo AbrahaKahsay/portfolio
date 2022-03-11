@@ -31,7 +31,7 @@ const inpName = document.getElementById('name');
 const inpEmail = document.getElementById('email');
 const inpMessage = document.getElementById('message');
 
-function atLoad(){
+function change(){
   const formObject = {
   name: inpName.value,
   email: inpEmail.value,
@@ -39,4 +39,3 @@ function atLoad(){
 };
 localStorage.setItem('form', JSON.stringify(formObject));
 };
-
