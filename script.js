@@ -39,3 +39,6 @@ function change(){
 };
 localStorage.setItem('form', JSON.stringify(formObject));
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  const formVal = localStorage.getItem('form');
