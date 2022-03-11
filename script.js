@@ -91,7 +91,7 @@ const projects = [
 
 // put some query selectors and functions here to call the modal
 function modal(){
-  const projectDetails = document.querySelector('.card');
+  const projectDetails = document.querySelector('.pop-details');
   const seenProject = document.querySelectorAll('.proj');
   const main = document.querySelector('.main-pop');
 
