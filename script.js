@@ -38,4 +38,5 @@ function change(){
   message: inpMessage.value,
 };
 localStorage.setItem('form', JSON.stringify(formObject));
-};
+}
+
