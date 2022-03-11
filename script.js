@@ -29,4 +29,14 @@ document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', (
 
 const inpName = document.getElementById('name');
 const inpEmail = document.getElementById('email');
-const inpMessage = do
+const inpMessage = document.getElementById('message');
+
+function atLoad(){
+  const formObject = {
+  name: inpName.value,
+  email: inpEmail.value,
+  message: inpMessage.value,
+};
+localStorage.setItem('form', JSON.stringify(formObject));
+};
+
