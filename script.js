@@ -24,3 +24,9 @@ document.getElementById('closebtn').addEventListener('click', () => {
 document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', () => {
   document.getElementById('navBar').style.width = '0%';
 }));
+
+// Local Storage
+
+const inpName = document.getElementById('name');
+const inpEmail = document.getElementById('email');
+const inpMessage = do
