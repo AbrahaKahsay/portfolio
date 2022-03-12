@@ -75,8 +75,38 @@ const data = [
 // looping through workSection to put the cards
 data.forEach(works => {
   const {title, description, image, technologies, live, source} = works;
+
   let listOfTechs = '';
   technologies.forEach(tech => {
     listOfTechs += `<li class="list">${tech}</li>`;
+    console.log(listOfTechs);
   });
+
+  const cardHTML = `
+  <div class="card" id="card${counter+1}">
+        <div class="desktop-card-image">
+          <img
+            class="image1"
+            src="images/Snapshoot-Portfolio(${counter+1}).svg"
+            alt="Porfolio-image1"
+          />
+        </div>
+        <div class="desktop-card-content">
+          <div class="headline1">
+            <ul class="tonic">
+              <li><h3>${title}</h3></li>
+            </ul>
+            <ul class="card-head">
+              <li class="canopy1">CANOPY</li>
+              <li class="canopy">Back End Dev</li>
+              <li class="canopy">2015</li>
+            </ul>
+          </div>
+          <p>${description}</p>
+          <ul class="cardsub">${listOfTechs}</ul>
+          <button type="button" class="btn-work" data-works="${counter}">See Project</button>
+        </div>
+      </div>
+  `
+
 });
