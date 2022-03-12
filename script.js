@@ -71,3 +71,12 @@ const data = [
     source: "images/Icon-gitHub.png"
   }
 ]
+
+// looping through workSection to put the cards
+data.forEach(works => {
+  const {title, description, image, technologies, live, source} = works;
+  let listOfTechs = '';
+  technologies.forEach(tech => {
+    listOfTechs += `<li class="list">${tech}</li>`;
+  });
+});
