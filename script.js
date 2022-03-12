@@ -126,9 +126,9 @@ popupButtons.forEach(popBtn => {
         <li class="role">Back End Dev</li>
         <li class="year">2015</li>
       </ul>
-      <div class="card">
+      <div class="popup-card">
             <img
-              class="image1 modal-image"
+              class="modal-image"
               src="${image}"
               alt="Porfolio-image1"
             />

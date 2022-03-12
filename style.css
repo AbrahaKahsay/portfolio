@@ -175,7 +175,14 @@ body {
   border-radius: 0.5rem;
 }
 
+.popup-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-image {
+  margin: -5px 0;
   width: 80%;
 }
 
