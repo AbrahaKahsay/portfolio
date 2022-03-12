@@ -253,14 +253,6 @@ body {
   padding: 0;
 }
 
-.desk-moda-description {
-  display: none;
-}
-
-.desk-tech-btn {
-  display: none;
-}
-
 /* works */
 .works-section {
   display: grid;
