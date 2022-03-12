@@ -119,7 +119,7 @@ popupButtons.forEach(popBtn => {
   <div class="modal-content" id="modal-content">
     <div class="title-btn>
       <li><h3>${title}</h3></li>
-      <a class="close-btn" id="close-modal">&times;</a>
+      <a class="close-icon" id="close-modal">&times;</a>
     </div>
       <ul class="pop-card-heads">
         <li style="list-style: none" class="campany camp">CANOPY</li>
@@ -150,7 +150,7 @@ popupButtons.forEach(popBtn => {
   modalSelection.innerHTML = modalPopup;
   modalSelection.style.display = 'flex';
 
-  const popCloseBtn = document.getElementsByClassName('close-btn')[0];
+  const popCloseBtn = document.getElementById('close-modal');
   popCloseBtn.onclick = function closeOnClick() {
     modalSelection.style.display = 'none';
   };
