@@ -149,6 +149,79 @@ body {
   color: #505f79;
 }
 
+/* Popup Modal */
+
+.modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 373px;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  background: #c1c7d0;
+  z-index: 10;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #dfe1e6;
+  width: 343px;
+  justify-items: center;
+}
+
+.title-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-btn h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+}
+.close-btn {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 30px;
+  width: 12px;
+  height: 12px;
+}
+
+.pop-card-heads {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+
+
+.modal-tags {
+  display: flex;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.modal-text {
+  margin-left: 24px;
+}
+
+.modal-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#live-btn,
+#source-btn {
+  padding: 0;
+}
+
 /* works */
 .works-section {
   display: grid;

@@ -99,7 +99,6 @@ data.forEach(works => {
    </div>
     `;
     workSection.insertAdjacentHTML('beforeend', cardHTML);
-    console.log(workSection);
     counter += 1;
 });
 
@@ -116,43 +115,39 @@ popupButtons.forEach(popBtn => {
     listOfTechs += `<li class="list">${tech}</li>`;
   });
 
-  const modalpopup = `
+  const modalPopup = `
   <div class="modal-content">
-    <div id="close-moda" class="close-btn"> <p>X</p></div>
-    <div class="headline1">
-      <ul class="tonic">
-        <li><h3>${title}</h3></li>
-      </ul>
-      <ul class="card-head">
-        <li class="canopy1">CANOPY</li>
-        <li class="canopy">Back End Dev</li>
-        <li class="canopy">2015</li>
-      </ul>
+    <div class="title-btn>
+    <li><h3>${title}</h3></li>
+      <a id="close-modal" class="close-btn">&times;</a>
     </div>
-    <div class="card" id="card${counter+1}">
-      <div class="desktop-card-image">
-          <img
-            class="image1"
-            src="images/Snapshoot-Portfolio(${counter+1}).svg"
-            alt="Porfolio-image1"
-          />
+      <ul class="pop-card-heads">
+        <li style="list-style: none" class="campany camp">CANOPY</li>
+        <li class="role">Back End Dev</li>
+        <li class="year">2015</li>
+      </ul>
+      <div class="card">
+            <img
+              class="image1 modal-image"
+              src="${image}"
+              alt="Porfolio-image1"
+            />
       </div>
-    </div>
-    <p>${description}</p>
-    <ul class="cardsub">${listOfTechs}</ul>
-    <div class="modal-btn">
-      <button id="live-btn" type="button" class="btn">
-        <span>See live <img src="images/Icon-Export.svg" alt="live icon button" /></span>
-      </button>
-      <button id="source-btn" type="button" class="btn">
-        <span>See source <img src="images/Icon-gitHub.png" alt="source icon button" /></span>
-      </button>
-    </div>
+      <div><p class="modal-text">${description}</p></div>
+      <ul class="modal-tags">${listOfTechs}</ul>
+      <div class="modal-btn">
+        <button id="live-btn" type="button" class="btn">
+          <span>See live <img src="images/Icon-Export.svg" alt="live icon button" /></span>
+        </button>
+        <button id="source-btn" type="button" class="btn">
+          <span>See source <img src="images/Icon-gitHub.png" alt="source icon button" /></span>
+        </button>
+      </div>
 
   </div>
-  `
+  `;
   const modalSelection = document.querySelector('.modal');
-  modalSelection.innerHTML = modalpopup;
+  modalSelection.innerHTML = modalPopup;
   modalSelection.style.display = 'flex';
 
   const popCloseBtn = document.querySelector('.close-btn');
