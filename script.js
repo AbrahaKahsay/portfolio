@@ -116,7 +116,7 @@ popupButtons.forEach(popBtn => {
   });
 
   const modalPopup = `
-  <div class="modal-content">
+  <div class="modal-content" id="modal-content">
     <div class="title-btn>
     <li><h3>${title}</h3></li>
       <a id="close-modal" class="close-btn">&times;</a>
@@ -146,15 +146,20 @@ popupButtons.forEach(popBtn => {
 
   </div>
   `;
-  const modalSelection = document.querySelector('.modal');
+  const modalSelection = document.getElementById('modal');
   modalSelection.innerHTML = modalPopup;
   modalSelection.style.display = 'flex';
 
-  const popCloseBtn = document.querySelector('.close-btn');
-  popCloseBtn.addEventListener('click', ()=> {
+  const popCloseBtn = document.getElementsByClassName('close-btn')[0];
+  popCloseBtn.onclick = function closeOnClick() {
     modalSelection.style.display = 'none';
-    modalSelection.innerHTML = '';
-  });
+  };
+
+  window.onclick = function closeOnEvent(event) {
+    if (event.target === modalSelection) {
+      modalSelection.style.display = 'none';
+    }
+  };
 
   });
 });
