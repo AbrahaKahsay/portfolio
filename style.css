@@ -200,6 +200,7 @@ body {
   line-height: 44px;
   text-align: left;
 }
+
 .cls-btn {
   cursor: pointer;
   width: 12px;
@@ -224,7 +225,6 @@ body {
 
 .campany {
   color: #344563;
-  font-family: Poppins;
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
@@ -626,7 +626,9 @@ button:active {
     top: 0;
     left: 0;
     background: #6070ff;
+
     /* backdrop-filter: blur(3rem); */
+
     opacity: 0.9;
     overflow-x: hidden;
     transition: 0.5s;
@@ -716,7 +718,9 @@ button:active {
     z-index: 1;
     background: white;
     color: black;
+
     /* backdrop-filter: blur(3rem); */
+
     opacity: 1;
   }
 
