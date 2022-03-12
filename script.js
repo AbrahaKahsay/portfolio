@@ -118,8 +118,8 @@ popupButtons.forEach(popBtn => {
   const modalPopup = `
   <div class="modal-content" id="modal-content">
     <div class="title-btn>
-    <li><h3>${title}</h3></li>
-      <a id="close-modal" class="close-btn">&times;</a>
+      <li><h3>${title}</h3></li>
+      <a class="close-btn" id="close-modal">&times;</a>
     </div>
       <ul class="pop-card-heads">
         <li style="list-style: none" class="campany camp">CANOPY</li>
