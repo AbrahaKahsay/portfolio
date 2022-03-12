@@ -61,6 +61,7 @@ const data = [
 ];
 
 // looping through workSection to put the cards
+
 data.forEach((works) => {
   const {
     title, description, technologies,
