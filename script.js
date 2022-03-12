@@ -133,15 +133,19 @@ popupButtons.forEach(popBtn => {
               alt="Porfolio-image1"
             />
       </div>
-      <div><p class="modal-text">${description}</p></div>
-      <ul class="modal-tags">${listOfTechs}</ul>
-      <div class="modal-btn">
-        <button id="live-btn" type="button" class="btn">
-          <span>See live <img src="images/Icon-Export.svg" alt="live icon button" /></span>
-        </button>
-        <button id="source-btn" type="button" class="btn">
-          <span>See source <img src="images/Icon-gitHub.png" alt="source icon button" /></span>
-        </button>
+      <div class="desk-moda-description">
+        <div><p class="modal-text">${description}</p></div>
+        <div class="desk-tech-btn">
+          <ul class="modal-tags">${listOfTechs}</ul>
+          <div class="modal-btn">
+            <button id="live-btn" type="button" class="btn">
+              <span>See live <img src="images/Icon-Export.svg" alt="live icon button" /></span>
+            </button>
+            <button id="source-btn" type="button" class="btn">
+              <span>See source <img src="images/Icon-gitHub.png" alt="source icon button" /></span>
+            </button>
+          </div>
+        </div>
       </div>
 
   </div>

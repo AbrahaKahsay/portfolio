@@ -253,6 +253,14 @@ body {
   padding: 0;
 }
 
+.desk-moda-description {
+  display: none;
+}
+
+.desk-tech-btn {
+  display: none;
+}
+
 /* works */
 .works-section {
   display: grid;
@@ -871,6 +879,18 @@ button:active {
   .social-media ul li {
     list-style: none;
     color: #505f79;
+  }
+
+  /* Desktop for POpup modal */
+
+  .desk-moda-description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .desk-tech-btn {
+    display: flex;
+    flex-direction: column;
   }
 
   /* works */
