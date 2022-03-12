@@ -150,15 +150,10 @@ popupButtons.forEach(popBtn => {
   modalSelection.innerHTML = modalPopup;
   modalSelection.style.display = 'flex';
 
-<<<<<<< HEAD
   const popCloseBtn = document.querySelector('.cls-btn');
   popCloseBtn.addEventListener('click', ()=> {
-=======
-  const popCloseBtn = document.getElementById('close-modal');
-  popCloseBtn.onclick = function closeOnClick() {
->>>>>>> b8e07f14cbcb2761e67525979c4a44fa535d4cb5
     modalSelection.style.display = 'none';
-  };
+  });
 
   window.onclick = function closeOnEvent(event) {
     if (event.target === modalSelection) {
