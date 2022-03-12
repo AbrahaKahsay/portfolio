@@ -522,7 +522,7 @@ button:active {
     top: 0;
     left: 0;
     background: #6070ff;
-    backdrop-filter: blur(3rem);
+    /* backdrop-filter: blur(3rem); */
     opacity: 0.9;
     overflow-x: hidden;
     transition: 0.5s;
@@ -612,7 +612,7 @@ button:active {
     z-index: 1;
     background: white;
     color: black;
-    backdrop-filter: blur(3rem);
+    /* backdrop-filter: blur(3rem); */
     opacity: 1;
   }
 

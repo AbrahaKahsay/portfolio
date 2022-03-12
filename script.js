@@ -28,7 +28,7 @@ document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', (
 
 // creating cards Dynamically using DOM 
 
-let workSection = document.querySelector('container-works-section');
+let workSection = document.querySelector('.container-works-section');
 let counter = 0;
 // create an array of objects to store the cards
 const data = [
@@ -38,9 +38,6 @@ const data = [
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     image: "images/Snapshoot-Portfolio(1).svg",
     technologies: ["html", "css", "javascript"],
-    live: "images/Icon-Export.svg",
-    source: "images/Icon-gitHub.png"
-
   },
   {
     // second card
@@ -48,8 +45,6 @@ const data = [
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     image: "images/Snapshoot-Portfolio(2).svg",
     technologies: ["html", "css", "javascript"],
-    live: "images/Icon-Export.svg",
-    source: "images/Icon-gitHub.png"
   },
   {
     // third card
@@ -57,8 +52,6 @@ const data = [
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     image: "images/Snapshoot-Portfolio(3).svg",
     technologies: ["html", "css", "javascript"],
-    live: "images/Icon-Export.svg",
-    source: "images/Icon-gitHub.png"
 
   },
   {
@@ -67,10 +60,8 @@ const data = [
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     image: "images/Snapshoot-Portfolio(4).svg",
     technologies: ["html", "css", "javascript"],
-    live: "images/Icon-Export.svg",
-    source: "images/Icon-gitHub.png"
   }
-]
+];
 
 // looping through workSection to put the cards
 data.forEach(works => {
@@ -79,12 +70,11 @@ data.forEach(works => {
   let listOfTechs = '';
   technologies.forEach(tech => {
     listOfTechs += `<li class="list">${tech}</li>`;
-    console.log(listOfTechs);
   });
 
   const cardHTML = `
   <div class="card" id="card${counter+1}">
-        <div class="desktop-card-image">
+    <div class="desktop-card-image">
           <img
             class="image1"
             src="images/Snapshoot-Portfolio(${counter+1}).svg"
@@ -106,7 +96,9 @@ data.forEach(works => {
           <ul class="cardsub">${listOfTechs}</ul>
           <button type="button" class="btn-work" data-works="${counter}">See Project</button>
         </div>
-      </div>
-  `
-
+   </div>
+    `;
+    workSection.insertAdjacentHTML('beforeend', cardHTML);
+    // console.log(workSection);
+    counter += 1;
 });
