@@ -1,7 +1,5 @@
-
-
-//mobile menu
-// functions for changing the navbar or dropdown menu's style 
+// mobile menu
+// functions for changing the navbar or dropdown menu's style
 
 function openNav() {
   document.getElementById('navBar').style.width = '100%';
@@ -11,7 +9,7 @@ function closeNav() {
   document.getElementById('navBar').style.width = '0%';
 }
 
- // add event listner to open and close buttons.
+// add event listner to open and close buttons.
 
 document.getElementById('hum').addEventListener('click', () => {
   openNav();
@@ -25,59 +23,60 @@ document.querySelectorAll('.links').forEach((n) => n.addEventListener('click', (
   document.getElementById('navBar').style.width = '0%';
 }));
 
+// creating cards Dynamically using DOM
 
-// creating cards Dynamically using DOM 
-
-let workSection = document.querySelector('.container-works-section');
+const workSection = document.querySelector('.container-works-section');
 let counter = 0;
 // create an array of objects to store the cards
 const data = [
   {
-      //  first card 
-    title: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "images/Snapshoot-Portfolio(1).svg",
-    technologies: ["html", "css", "javascript"],
+    //  first card
+    title: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'images/Snapshoot-Portfolio(1).svg',
+    technologies: ['html', 'css', 'javascript'],
   },
   {
     // second card
-    title: "Multi-Post Stories",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "images/Snapshoot-Portfolio(2).svg",
-    technologies: ["html", "css", "javascript"],
+    title: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'images/Snapshoot-Portfolio(2).svg',
+    technologies: ['html', 'css', 'javascript'],
   },
   {
     // third card
-    title: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "images/Snapshoot-Portfolio(3).svg",
-    technologies: ["html", "css", "javascript"],
+    title: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'images/Snapshoot-Portfolio(3).svg',
+    technologies: ['html', 'css', 'javascript'],
 
   },
   {
     // fourth card
-    title: "Multi-Post Stories",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    image: "images/Snapshoot-Portfolio(4).svg",
-    technologies: ["html", "css", "javascript"],
-  }
+    title: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'images/Snapshoot-Portfolio(4).svg',
+    technologies: ['html', 'css', 'javascript'],
+  },
 ];
 
 // looping through workSection to put the cards
-data.forEach(works => {
-  const {title, description, image, technologies, live, source} = works;
+data.forEach((works) => {
+  const {
+    title, description, technologies,
+  } = works;
 
   let listOfTechs = '';
-  technologies.forEach(tech => {
+  technologies.forEach((tech) => {
     listOfTechs += `<li class="list">${tech}</li>`;
   });
 
   const cardHTML = `
-  <div class="card" id="card${counter+1}">
+  <div class="card" id="card${counter + 1}">
     <div class="desktop-card-image">
           <img
             class="image1"
-            src="images/Snapshoot-Portfolio(${counter+1}).svg"
+            src="images/Snapshoot-Portfolio(${counter + 1}).svg"
             alt="Porfolio-image1"
           />
         </div>
@@ -98,24 +97,26 @@ data.forEach(works => {
         </div>
    </div>
     `;
-    workSection.insertAdjacentHTML('beforeend', cardHTML);
-    counter += 1;
+  workSection.insertAdjacentHTML('beforeend', cardHTML);
+  counter += 1;
 });
 
 // Select cards button for popup
 
 const popupButtons = document.querySelectorAll('.btn-work');
-popupButtons.forEach(popBtn => {
-  popBtn.addEventListener('click', ()=> {
+popupButtons.forEach((popBtn) => {
+  popBtn.addEventListener('click', () => {
     const btnWorkIndex = popBtn.dataset.works;
-    const {title, description, image, technologies} = data[btnWorkIndex];
-    
-    let listOfTechs = '';
-    technologies.forEach(tech => {
-    listOfTechs += `<li class="list">${tech}</li>`;
-  });
+    const {
+      title, description, image, technologies,
+    } = data[btnWorkIndex];
 
-  const modalPopup = `
+    let listOfTechs = '';
+    technologies.forEach((tech) => {
+      listOfTechs += `<li class="list">${tech}</li>`;
+    });
+
+    const modalPopup = `
   <div class="modal-content">
     <div class="title-x">
       <div><h3 class="title-mod">${title}</h3></div>
@@ -150,20 +151,19 @@ popupButtons.forEach(popBtn => {
 
   </div>
   `;
-  const modalSelection = document.getElementById('modal');
-  modalSelection.innerHTML = modalPopup;
-  modalSelection.style.display = 'flex';
+    const modalSelection = document.getElementById('modal');
+    modalSelection.innerHTML = modalPopup;
+    modalSelection.style.display = 'flex';
 
-  const popCloseBtn = document.querySelector('.cls-btn');
-  popCloseBtn.addEventListener('click', ()=> {
-    modalSelection.style.display = 'none';
-  });
-
-  window.onclick = function closeOnEvent(event) {
-    if (event.target === modalSelection) {
+    const popCloseBtn = document.querySelector('.cls-btn');
+    popCloseBtn.addEventListener('click', () => {
       modalSelection.style.display = 'none';
-    }
-  };
+    });
 
+    window.onclick = function closeOnEvent(event) {
+      if (event.target === modalSelection) {
+        modalSelection.style.display = 'none';
+      }
+    };
   });
 });
