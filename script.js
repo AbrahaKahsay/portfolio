@@ -99,6 +99,67 @@ data.forEach(works => {
    </div>
     `;
     workSection.insertAdjacentHTML('beforeend', cardHTML);
-    // console.log(workSection);
+    console.log(workSection);
     counter += 1;
+});
+
+// Select cards button for popup
+
+const popupButtons = document.querySelectorAll('.btn-work');
+popupButtons.forEach(popBtn => {
+  popBtn.addEventListener('click', ()=> {
+    const btnWorkIndex = popBtn.dataset.works;
+    const {title, description, image, technologies} = data[btnWorkIndex];
+    
+    let listOfTechs = '';
+    technologies.forEach(tech => {
+    listOfTechs += `<li class="list">${tech}</li>`;
+  });
+
+  const modalpopup = `
+  <div class="modal-content">
+    <div id="close-moda" class="close-btn"> <p>X</p></div>
+    <div class="headline1">
+      <ul class="tonic">
+        <li><h3>${title}</h3></li>
+      </ul>
+      <ul class="card-head">
+        <li class="canopy1">CANOPY</li>
+        <li class="canopy">Back End Dev</li>
+        <li class="canopy">2015</li>
+      </ul>
+    </div>
+    <div class="card" id="card${counter+1}">
+      <div class="desktop-card-image">
+          <img
+            class="image1"
+            src="images/Snapshoot-Portfolio(${counter+1}).svg"
+            alt="Porfolio-image1"
+          />
+      </div>
+    </div>
+    <p>${description}</p>
+    <ul class="cardsub">${listOfTechs}</ul>
+    <div class="modal-btn">
+      <button id="live-btn" type="button" class="btn">
+        <span>See live <img src="images/Icon-Export.svg" alt="live icon button" /></span>
+      </button>
+      <button id="source-btn" type="button" class="btn">
+        <span>See source <img src="images/Icon-gitHub.png" alt="source icon button" /></span>
+      </button>
+    </div>
+
+  </div>
+  `
+  const modalSelection = document.querySelector('.modal');
+  modalSelection.innerHTML = modalpopup;
+  modalSelection.style.display = 'flex';
+
+  const popCloseBtn = document.querySelector('.close-btn');
+  popCloseBtn.addEventListener('click', ()=> {
+    modalSelection.style.display = 'none';
+    modalSelection.innerHTML = '';
+  });
+
+  });
 });
