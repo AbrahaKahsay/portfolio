@@ -16,7 +16,7 @@
 👤 **Author**
 
 - GitHub: [@AbrahaKahsay](https://github.com/AbrahaKahsay)
-- Twitter: [@Alamsbut](https://twitter.com/Alamsbut)
+- Twitter: [@abraha_ka](https://twitter.com/abraha_ka)
 - LinkedIn: [abraha-kahsay](www.linkedin.com/in/abraha-kahsay-492771135/)
 
 ## 🤝 Contributing
